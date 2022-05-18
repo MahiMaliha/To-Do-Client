@@ -15,7 +15,7 @@ import Register from './components/login/Register';
 import CheckOut from './components/checkout/CheckOut';
 import RequireAuth from '../src/components/login/RequireAuth/RequireAuth';
 import Blog from './components/blog/Blog';
-importAddTask from './components/addproducts/AddProduct';
+import AddTask from './components/addproducts/AddTask';
 
 
 function App() {
