@@ -15,10 +15,8 @@ import Register from './components/login/Register';
 import CheckOut from './components/checkout/CheckOut';
 import RequireAuth from '../src/components/login/RequireAuth/RequireAuth';
 import Blog from './components/blog/Blog';
-import AddProduct from './components/addproducts/AddProduct';
-import ManageInventory from './components/manageinventory/ManageInventory';
-import ManageItems from './components/manageitems/ManageItems';
-import MyItem from './components/myitems/MyItem';
+importAddTask from './components/addproducts/AddProduct';
+
 
 function App() {
   return (

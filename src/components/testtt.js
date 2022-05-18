@@ -19,7 +19,7 @@ const MenuDetails = () => {
    const { register, handleSubmit, reset } = useForm();
    const onSubmit = data =>{
        console.log(data);
-       axios.post("https://pacific-chamber-54725.herokuapp.com/booking",data)
+       axios.post("https://pacific-chamber-54725.herokuapp.com/todo",data)
        .then(res=>{
            if(res.data.insertedId){
               alert("Added Successfully.")

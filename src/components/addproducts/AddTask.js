@@ -7,16 +7,13 @@ import auth from '../../firebase.init';
 import { Col, Container, Row } from 'react-bootstrap';
 import IndividualProduct from '../individualproduct/IndividualProduct';
 
-const AddProduct = () => {
+const AddTask = () => {
     const [user] = useAuthState(auth);
     const { register, handleSubmit, reset } = useForm();
-
-
-
-    
+  
     const onSubmit = data => {
         console.log(data);
-        axios.post('https://quiet-chamber-26199.herokuapp.com/booking',data)
+        axios.post('https://quiet-chamber-26199.herokuapp.com/todo',data)
         .then(res=>{
            if(res.data.insertedId){
                alert('Added Successfully');
@@ -27,7 +24,7 @@ const AddProduct = () => {
 
     const [todo, setToDo] = useState([])
     useEffect(()=>{
-fetch('https://quiet-chamber-26199.herokuapp.com/booking')
+fetch('https://quiet-chamber-26199.herokuapp.com/todo')
 .then(res => res.json())
 .then(data => setToDo(data))
     },[])
@@ -59,4 +56,4 @@ fetch('https://quiet-chamber-26199.herokuapp.com/booking')
     );
 };
 
-export default AddProduct;
+export defaultAddTask;

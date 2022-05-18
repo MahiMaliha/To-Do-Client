@@ -9,7 +9,7 @@ import './ManageInventory.css';
 const ManageInventory = () => {
     const [inventory, setInventory] = useState([])
     useEffect(()=>{
-fetch('https://quiet-chamber-26199.herokuapp.com/booking')
+fetch('https://quiet-chamber-26199.herokuapp.com/todo')
 .then(res => res.json())
 .then(data => setInventory(data))
     },[])
